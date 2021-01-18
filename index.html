@@ -2,7 +2,7 @@
 <html>
 <style>
 .filterDiv {
-  float: left;
+  float:left;
   background-color: #F3F3F3;
   color: #ffffff;
   width: 300px;
@@ -72,6 +72,7 @@ h5 {
 
 body {
 	background-color:#F3F3F3;
+    margin:0px;
 }
 
 .centered {
@@ -81,18 +82,110 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
 .mainimgcontainer {
   position: relative;
-  text-align: center;
+  text-align: right;
   color: white;
 }
+
+.listcontainer {
+  position: relative;
+  text-align: center;
+  padding:5%;
+}
+
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-family:sans-serif;
+  text-decoration:none;
+  font-weight:bold;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #F3F3F3;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+.tothetop {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    border-radius:5px;
+    padding: 5px;
+    border: 0px;
+    background-color:white;
+    color:#737373;
+}
+
 </style>
 <body>
+
+<a href="#top"><button class="tothetop">
+     Back to the top!</button></a>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <input type="text" placeholder="Search..">
+</div>
 <div class = "mainimgcontainer">
-<img src = "https://lh3.googleusercontent.com/l-hXccNkX9mY9uWDuFQR3WrW8Z426W70shTHC4P9VnY7zm6m3W9xSD23W32I68oeoB5K9U5TvGGXnZwbsuC3VSqqXr7_xK1zCUV5p1TIF8qXZkz7SDV1hsI5NwYZm3g50nEknV3aWn5BP14iaEaA79uy0lRl6V08rE5eL6PxS1Dv5lGUrVZQfAu17qc0ajC-KcpyL64HEscgPR8yQ10tm96Wh_FQKAuL13cJerzmqU2_rzEJ6292lA59AtegL80jHHsaFQBidHSzFIPS8YrB30_NKgCXEPtSrw3F_4GoTCNnYnrRVGmUyBHHE9KiptIiyNu3qyofglbDRwoUu6ab_fgPHq5xHUJ58r5cJCwtyjpeL3ZxPmbcxNwaJnzS9Ej-5_uPW8cHD8j7a058CbmNBcNzBPJY2theXWQevbHDQem-Wd4VrRfGCaC-UN7r6E7Fv4_OVY4d0gIVxS-srbPmJ9fRiacQuZg_BAn-KN7E0O3Lpezu0VVR3EfnL6PDmYx5WrT8n5FwsGOagi04oHZJabdTru_Dz93WuaiswP4QSRLj-NsK4D8-m3GqIbcO5ryBP_i7o1Lf5dP2AiuMhdpRkXl0npZM59-4Of0qZ5f6ncZV7y-t-4nLNDdO4wuHMugAMB8ouIK5eHp90leXYPxnUMBvgGR_ElNRMpES6EnbuNAMjFjlsGhu=w1136-h757-no?authuser=1"
+<img src = "https://lh3.googleusercontent.com/I349e-9kDMQg-sbD2Sw_ocPyIDKvOOY3ue2BV11mZ5S-lDlSEXdTjhL47Y9Ubsb1hq-i3-aX7HLsrbDKYWtmYXyB2Uzolm1iDCJ62msZwqR0YKoHUm-lxV24wc4B2igQ5GnRU53Oh4kZzR0ZqmpRsB_Ni2iV95vRLu6LH2ZnvVgSDcJq4ZW5hu92nUu0sAIvSRKU2qaoUVxqFb6LW-055hSWxIO3fCVvSKLfZE1Lb50ZlxnOMvBLaAfCg5poUARk2K7JGwdo7MjT4H55jr5Hjocu5Ms3qy-u64f_ZdZnl_wvp4HbwPmgzLVOYxnHUM-BZv7DHSLaGCFV-ybLxIrqYl_QQIHxWUX2TErQvm9FvgGnaGg7E8Sm2Jvzp-6ckd8ehI0vJ_0BqpIbuSjbiImxRTWnyteY7CyWKAVvLNT6XoJ87IbKhjktB9DX97ThbWVodIuXnznpfGSHRuqsM6Qr-BU6d3pqkCK92Jdq7wTBQdpJXotcVzovDohwhVGf1EiIr9MseaLr4famqi4kdJ0lb3yNan7jVpA07yv90acxsetogE8-TEXV7GC8FrRnvOK-uLm3eetuuz4ZFOkz_xgrGGbfWp9gnDQxdor47AVI3DvalVMg3CXA8CDwm4kPEdKC27B_PIC73cG0uZSJR3U9PMaZ7mVPJidCWeN8Ecjj9FEcWlDBqpcQ=w1136-h757-no?authuser=1"
 style="width:100%;height:auto;">
-<div class = "centered"><a style="color:white;font-size:400%;font-family:sans-serif;text-shadow: 2px 2px #737373;font-weight:bold;">Pole Movebook</a>
+<div class = "bottom-right"><a style="color:white;font-size:400%;font-family:sans-serif;font-weight:bold;">Pole<br> Movebook</a>
 </div></div>
+<div class ="listcontainer">
 <h2>Filter by Difficulty</h2>
 
 <div id="myBtnContainer">
@@ -103,6 +196,7 @@ style="width:100%;height:auto;">
   <button class="btn" onclick="filterSelection('Advanced')"> Advanced</button>
   <button class="btn" onclick="filterSelection('Extreme')"> Extreme</button>
 </div>
+
 
 <a href = "https://stackoverflow.com/questions/39325414/line-break-in-html-with-n"><div class="filterDiv Intro"><img src = "https://i.imgur.com/UldQMPy.png" style="width:280px;height:150px;margin:10px;"> <br><h4>Around the World</h4><br><h5>Intro<h5></div></a>
 <a href = "https://stackoverflow.com/questions/39325414/line-break-in-html-with-n"><div class="filterDiv Intro"><img src = "https://i.imgur.com/UldQMPy.png" style="width:280px;height:150px;margin:10px;"> <br><h4>Pirouette</h4><br><h5>Intro<h5></div></a>
@@ -333,6 +427,7 @@ style="width:100%;height:auto;">
 <a href = "https://stackoverflow.com/questions/39325414/line-break-in-html-with-n"><div class="filterDiv Extreme"><img src = "https://i.imgur.com/UldQMPy.png" style="width:280px;height:150px;margin:10px;"> <br><h4>Phoenix</h4><br><h5>Extreme<h5></div></a>
 <a href = "https://stackoverflow.com/questions/39325414/line-break-in-html-with-n"><div class="filterDiv Extreme"><img src = "https://i.imgur.com/UldQMPy.png" style="width:280px;height:150px;margin:10px;"> <br><h4>Starfish</h4><br><h5>Extreme<h5></div></a>
 <a href = "https://stackoverflow.com/questions/39325414/line-break-in-html-with-n"><div class="filterDiv Extreme"><img src = "https://i.imgur.com/UldQMPy.png" style="width:280px;height:150px;margin:10px;"> <br><h4>Wildbird</h4><br><h5>Extreme<h5></div></a>
+</div>
 </div>
 
 <script>
