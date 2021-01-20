@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GS4B2F9EFC"></script>
 <script>
@@ -11,123 +12,10 @@
   gtag('config', 'G-GS4B2F9EFC');
 </script>
 <style>
-.filterDiv {
-  float:left;
-  background-color: #F3F3F3;
-  color: #ffffff;
-  width: 300px;
-  height: 250px;
-  line-height: 20px;
-  text-align: center;
-  display: none;
-}
-
-.filterDiv:hover {
-  background-color: white;
-}
-
-.show {
-  display: block;
-}
-
-.container {
-  margin-top: 20px;
-  overflow: hidden;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-
-.btn2 {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-}
-
-.btn2:hover {
-  background-color: #ddd;
-}
-
-.btn2.active2 {
-  background-color: #666;
-  color: white;
-}
-
-h2 {
-	color: black;
-    font-size: 140%;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height:100%;
-    margin:2%;
-}
-
-h4 {
-	color: #333745;
-    font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height:100%;
-    margin:0px;
-}
-
-h5 {
-	color: #737373;
-    font-size: 80%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    line-height: 100%;
-    margin:0px;
-}
-
 
 body {
 	background-color:#F3F3F3;
     margin:0px;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
-
-.mainimgcontainer {
-  position: relative;
-  text-align: right;
-  background-color: black;
-  min-height:300px;
-}
-
-.listcontainer {
-  position: relative;
-  text-align: center;
-  padding:2%;
-  width:100%;
-  clear:both;
 }
 
 
@@ -187,78 +75,140 @@ body {
   }
 }
 
-.tothetop {
-    position: fixed;
-    bottom: 5px;
-    right: 5px;
-    border-radius:5px;
-    padding: 5px;
-    border: 0px;
-    background-color:white;
-    color:#737373;
-	z-index:1000;
-}
-.question {
+.collapsible {
+  background-color: #BFD7EA;
   color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
   text-align: left;
-  font-family:sans-serif;
+  outline: none;
+  font-size: 16px;
+  font-weight:bold;
+  font-family:rift-soft,sans-serif;
+}
+
+.active, .collapsible:hover {
+  background-color: #99bfdd;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #F3F3F3;
+}
+
+.FAQtitle {
+  color: black;
+  text-align: center;
+  font-family:rift-soft,sans-serif;
   text-decoration:none;
   font-weight:bold;
-  font-size: 18px;
-  margin:0px;
+  font-size: 24px;
+  margin:40px;
 }
 .answer {
   color: black;
   text-align: left;
-  margin-left: 40px;
-  font-family:sans-serif;
+  font-family:rift-soft,sans-serif;
   text-decoration:none;
   font-weight:normal;
   font-size: 16px;
-  line-height:20px;
+  line-height:18px;
 }
-
 </style>
 </head>
 <body>
+
+<div class="topnav">
+  <a href="/">Home</a>
+  <a class = "active" href="/FAQ.html">FAQ</a>
+  <input type="text" placeholder="Search..">
+</div> 
+
 <div style="width:80%;max-width:1000px;text-align:left;margin:auto;clear:both;">
-<h2 style="text-align:center;">Pole Dance FAQ</h2>
-<br>
-<p class = "question">I’m plus-size. Can I still pole? Are there any home poles for people >200lbs? </p>
-<p class = "answer">
-Absolutely you can still pole! Pole has a huge plus-size community, and I’ve never seen a sport as body-positive. The two sturdiest brands of pole I’d recommend are <a href="https://xpoleus.com/">XPole</a> and <a href="https://lupitpole.com/">Lupit</a>. Neither have official weight limits because the sturdiness depends on the lateral force rather than weight. You may have to be more careful with very dynamic moves and fast spins but you shouldn’t have a problem on either XPole or Lupit poles no matter your weight. 
-<br><br>
-A great community to ask questions is the <a href="https://www.facebook.com/groups/354085382491161/">Plus Size Pole Dancers group</a> on Facebook, and for IG inspiration I’d recommend <a href="https://www.instagram.com/rozthediva/?hl=en">Roz the Diva</a>, <a href="https://www.instagram.com/paigeonapole/?hl=en">paigeonapole</a>, <a href = "https://www.instagram.com/lyricallypole/?hl=en">lyricallypole</a>, <a href ="https://www.instagram.com/natalya.nightshade/?hl=en">natalya.nightshade</a>, and <a href = "https://www.instagram.com/therealmellyb/?hl=en">therealmellyb</a>.
-<br></p><br>
-<p class = "question">I have carpet. Can I still get a pole?</p>
-<p class = "answer">
-Tension and stage poles are both compatible with carpet. You have to be extra careful to check the pole tension before each use. Carpet can compress under the force of the pole, which will cause the tension to decrease. If your pole tension lowers, it can fall during use. The way to avoid this is to check the pole tension and expand the pole if needed as the carpet compresses.
-<br></p><br>
-<p class = "question">I’d love to get a pole, but I rent.</p>
-<p class = "answer">
-I rent too! Tension poles and stage poles leave no permanent damage. For tension poles, correct installation is key. An incorrectly installed pole can crack the ceiling. Always make sure your pole is installed under a structural beam, and that it isn’t overtightened.
-<br></p><br>
-<p class = "question">I have vaulted ceilings--what are my home pole options?</p>
-<p class = "answer">
-For vaulted ceilings, you’ll need either a <a href="https://xpoleus.com/shop-all/accessories/mounts/ball-mount/">vaulted mount</a> (not renter-friendly) or a stage pole to pole safely. Most reputable brands of pole have mounts for vaulted ceilings.
-<br></p><br>
-<p class = "question">I have super low/super high ceilings--what are my home pole options?</p>
-<p class = "answer">
-If your ceilings are below 7’6” or above 11’, Xpole and Lupit tension poles will not fit your ceiling. For ceilings 11’-14’, permanently-mounted poles are an option. For anything outside of that range, stage poles are your best bet. Keep in mind, stage poles have a 4-12” podium height, so if you are using a stage pole in a foot with 7’ ceilings, your amount of usable pole will likely be under 6’.
-<br></p><br>
-<p class = "question">So I got a pole. Now how do I learn?!</p>
-<p class = "answer">
-Classes are the absolute best way to learn, especially as you’re just starting. If there is a pole studio near you, you will be able to connect with the local pole community by taking classes. Otherwise, online classes are a great option. One studio I recommend for online beginner lessons is <a href = "https://www.ascendancestudios.org/livestream">Ascendance Studios</a>. There, you can even take non-pole classes like floorwork, ballet, conditioning, and flexibility while being a part of the pole community.
-<br><br>
-As far as self-led online learning goes, there are a plethora of online membership sites. <a href = "https://123poling.com/">123Poling</a>, <a href="https://www.studioveena.com/users/home">Studio Veena</a>, <a href="https://www.polesphere.com/">PoleSphere</a>, and <a href="https://cleosrocknpole.com/">CRNP</a> are a few of the widely-used memberships. There are also plenty of pole instructors on <a href = "https://www.patreon.com/search?q=pole+dance">Patreon</a> if you find one or two that suit your preferred style. Some Youtube creators that I recommend are <a href = "https://www.youtube.com/c/PoleWithErynn">Pole with Erynn</a>, <a href ="https://www.youtube.com/channel/UCzR_i7AncPPHUxRd4kNB4kw">Elizabeth Blanchard</a>, <a href="https://www.youtube.com/user/MsMegsn">The Pole Dancer</a>, and <a href="https://www.youtube.com/channel/UCCqZ_lPHb3BtGi6cpk_5r2Q">PoleFreaks</a>.
-<br></p><br>
-<p class = "question">I’m interested in starting pole, but I’m under 18. Can I still pole dance? How do I convince my parents?</p>
-<p class = "answer">
-You can absolutely begin pole dancing, and there are plenty of kid polers internationally! <a href ="https://polechampionshipseries.com/products/pcs-usa">There are even competition age groups only for under-18s</a>. That said, it’s completely justified for parents to be nervous about their kids pole dancing. Most people don’t know that pole dancing can be used as a sport/artistic medium, so they think of it in its classic 18+ context. The best thing you can do is show any parents/peers who don’t understand content from other awesome young polers. <a href="https://www.instagram.com/little.warrior5/?hl=en">Little.warrior5</a>, <a href="https://www.instagram.com/arinachernyshe/?hl=en">arinachernyshe</a>, and <a href="https://www.instagram.com/maela_polerina/?hl=en">maela_polerina</a> are 3 that I follow on IG. 
-<br></p><br>
-<p class = "question">How much space is needed around a pole?</p>
-<p class = "answer">
-6’ around the pole is going to be ideal for dynamic and wide moves like reverse grabs, Reiko Split, and Iron-X. That said, anything 3’ and above will accommodate for most beginner/intermediate moves. I have 4’ around my pole and I only occasionally hit my dining room table.
-<br></p>
+	<p class="FAQtitle">Pole Dance FAQ:</p>
+	<button class="collapsible">I’m plus-size. Can I still pole? Are there any home poles for people >200lbs?</button>
+	<div class="content">
+	  <p class = "answer">Absolutely you can still pole! Pole has a huge plus-size community, and I’ve never seen a sport as body-positive. The two sturdiest brands of pole I’d recommend are <a href="https://xpoleus.com/">XPole</a> and <a href="https://lupitpole.com/">Lupit</a>. Neither have official weight limits because the sturdiness depends on the lateral force rather than weight. You may have to be more careful with very dynamic moves and fast spins but you shouldn’t have a problem on either XPole or Lupit poles no matter your weight. 
+		<br><br>
+		A great community to ask questions is the <a href="https://www.facebook.com/groups/354085382491161/">Plus Size Pole Dancers group</a> on Facebook, and for IG inspiration I’d recommend <a href="https://www.instagram.com/rozthediva/?hl=en">Roz the Diva</a>, <a href="https://www.instagram.com/paigeonapole/?hl=en">paigeonapole</a>, <a href = "https://www.instagram.com/lyricallypole/?hl=en">lyricallypole</a>, <a href ="https://www.instagram.com/natalya.nightshade/?hl=en">natalya.nightshade</a>, and <a href = "https://www.instagram.com/therealmellyb/?hl=en">therealmellyb</a>.
+		<br></p></div>
+	<button class="collapsible">I have carpet. Can I still get a pole?</button>
+	<div class="content">
+	 <p class = "answer">
+		Tension and stage poles are both compatible with carpet. You have to be extra careful to check the pole tension before each use. Carpet can compress under the force of the pole, which will cause the tension to decrease. If your pole tension lowers, it can fall during use. The way to avoid this is to check the pole tension and expand the pole if needed as the carpet compresses.
+		<br></p></div>
+	<button class="collapsible">I’d love to get a pole, but I rent.</button>
+	<div class="content">
+	  <p class = "answer">
+		I rent too! Tension poles and stage poles leave no permanent damage. For tension poles, correct installation is key. An incorrectly installed pole can crack the ceiling. Always make sure your pole is installed under a structural beam, and that it isn’t overtightened.
+		<br></p>
+	</div>
+	<button class="collapsible">I have vaulted ceilings--what are my home pole options?</button>
+	<div class="content">
+	  <p class = "answer">
+		For vaulted ceilings, you’ll need either a <a href="https://xpoleus.com/shop-all/accessories/mounts/ball-mount/">vaulted mount</a> (not renter-friendly) or a stage pole to pole safely. Most reputable brands of pole have mounts for vaulted ceilings.
+		<br></p>
+	</div>
+	<button class="collapsible">How much space is needed around a pole?</button>
+	<div class="content">
+	  <p class = "answer">
+		6’ around the pole is going to be ideal for dynamic and wide moves like reverse grabs, Reiko Split, and Iron-X. That said, anything 3’ and above will accommodate for most beginner/intermediate moves. I have 4’ around my pole and I only occasionally hit my dining room table.
+		<br></p>
+	</div>
+	<button class="collapsible">I have super low/super high ceilings--what are my home pole options?</button>
+	<div class="content">
+	  <p class = "answer">
+		If your ceilings are below 7’6” or above 11’, Xpole and Lupit tension poles will not fit your ceiling. For ceilings 11’-14’, permanently-mounted poles are an option. For anything outside of that range, stage poles are your best bet. Keep in mind, stage poles have a 4-12” podium height, so if you are using a stage pole in a foot with 7’ ceilings, your amount of usable pole will likely be under 6’.
+		<br></p>
+	</div>
+	<button class="collapsible">So I got a pole. Now how do I learn?!</button>
+	<div class="content">
+	  <p class = "answer">
+		Classes are the absolute best way to learn, especially as you’re just starting. If there is a pole studio near you, you will be able to connect with the local pole community by taking classes. Otherwise, online classes are a great option. One studio I recommend for online beginner lessons is <a href = "https://www.ascendancestudios.org/livestream">Ascendance Studios</a>. There, you can even take non-pole classes like floorwork, ballet, conditioning, and flexibility while being a part of the pole community.
+		<br><br>
+		As far as self-led online learning goes, there are a plethora of online membership sites. <a href = "https://123poling.com/">123Poling</a>, <a href="https://www.studioveena.com/users/home">Studio Veena</a>, <a href="https://www.polesphere.com/">PoleSphere</a>, and <a href="https://cleosrocknpole.com/">CRNP</a> are a few of the widely-used memberships. There are also plenty of pole instructors on <a href = "https://www.patreon.com/search?q=pole+dance">Patreon</a> if you find one or two that suit your preferred style. Some Youtube creators that I recommend are <a href = "https://www.youtube.com/c/PoleWithErynn">Pole with Erynn</a>, <a href ="https://www.youtube.com/channel/UCzR_i7AncPPHUxRd4kNB4kw">Elizabeth Blanchard</a>, <a href="https://www.youtube.com/user/MsMegsn">The Pole Dancer</a>, and <a href="https://www.youtube.com/channel/UCCqZ_lPHb3BtGi6cpk_5r2Q">PoleFreaks</a>.
+		<br></p>
+	</div>
+	<button class="collapsible">I’m interested in starting pole, but I’m under 18. Can I still pole dance? How do I convince my parents?</button>
+	<div class="content">
+	  <p class = "answer">
+		You can absolutely begin pole dancing, and there are plenty of kid polers internationally! <a href ="https://polechampionshipseries.com/products/pcs-usa">There are even competition age groups only for under-18s</a>. That said, it’s completely justified for parents to be nervous about their kids pole dancing. Most people don’t know that pole dancing can be used as a sport/artistic medium, so they think of it in its classic 18+ context. The best thing you can do is show any parents/peers who don’t understand content from other awesome young polers. <a href="https://www.instagram.com/little.warrior5/?hl=en">Little.warrior5</a>, <a href="https://www.instagram.com/arinachernyshe/?hl=en">arinachernyshe</a>, and <a href="https://www.instagram.com/maela_polerina/?hl=en">maela_polerina</a> are 3 that I follow on IG. 
+		<br></p>
+	</div>
 </div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
 </body>
+</html>
